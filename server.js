@@ -1,30 +1,23 @@
-//server.js
-//dependencies
-var express = require('express');
+// Dependencies
+var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
-// Sets up the Express app to handle data parsing
-
 var app = express();
 
-// var PORT = 3000; not needed
+var PORT = process.env.PORT || 8080;
 
-// Configure Express.js middle-wares
+// For serving of static CSS
+app.use(express.static(__dirname + "/app/css"));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-//app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// Use the express.static middleware to serve static content for the app from the "public" directory in the application directory.
-app.use(express.static("public"));  //add w paul
-
-//grab the routes
+// API and HTML routes
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
-
-
-// Starts the server to begin listening
 // =============================================================
 var PORT = process.env.PORT || 3000;
 
