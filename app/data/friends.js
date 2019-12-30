@@ -3,7 +3,7 @@
 var friends = [{
     "name": "Patrick",
     "photo": "https://commons.wikimedia.org/wiki/File:Patrick_Kane_-_Chicago_Blackhawks.jpg",
-    "scores": ['3', '3', '3', '3', '3', '3', '3', '5', '2', '4']
+    "scores": ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
 }, {
     "name": "Jonathan",
     "photo": "https://commons.wikimedia.org/wiki/File:Jonathan_Toews_(5441820205).jpg",

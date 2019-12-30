@@ -55,8 +55,16 @@ a {
 	font-size: 20px;
 }
 
+
+.modal-body {
+	background-color: blue
+	
+	;
+}
+
 #bestFriendModal {
 	text-align: center;
+	background-color: red;
 }
 
 #bestFriendPhoto {
