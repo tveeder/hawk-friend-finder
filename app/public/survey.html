@@ -129,7 +129,9 @@
 		if(valid === true) {
 			var newUser = {
 				name: $("#name").val().trim(),
+			
 				photo: $("#photo").val().trim(),
+
 				scores: [
 					$("#question1").val(),
 					$("#question2").val(),
@@ -137,21 +139,31 @@
 					$("#question4").val(),
 					$("#question5").val(),
 				]
+		
 			};
 
+
+			console.log(newUser.name)
+
 			var currentURL = window.location.origin;
+
+			console.log(currentURL)
 
 			// Ajax call for receiving response after POST req
 			$.post(currentURL + "/api/friends", newUser, function(data) {
 				$("#bestFriend").text(data.name);
+				console.log(data.name)
 				
 				$("#bestFriendPhoto").attr("src", data.photo);
 				
 				$("#bestFriendModal").modal("toggle");
 			});
+
+
 		} else {
 			// If a required field is missing, show alert
 			alert("Survey is incomplete!");
+
 		}
 	});
 </script>

@@ -14,12 +14,12 @@ var friends = [
 	{
 		name: "Corey",
 		photo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Corey_Crawford_%285442402202%29_%28cropped1%29.jpg",
-		scores: [1, 1, 5, 3, 3, 5, 1, 2, 3, 4]
+		scores: [2,2,2,2,2,2,2,2,2,2]
 	},
 	{
 		name: "Andrew",
 		photo: "https://upload.wikimedia.org/wikipedia/commons/5/54/Andrew_Shaw_%288397647%29.jpg",
-		scores: [3, 1, 3, 5, 2, 3, 2, 2, 5, 5]
+		scores: [3,3,3,3,3,3,3,3,3,3]
 	},
 	{
 		name: "Brandon",
