@@ -4,16 +4,16 @@ var friends = require('../data/friends.js');
 
 console.log(friends[2].name);
 
-module.exports = function (app) {
+module.exports = function(app) {
 
 
     //first we will set up the route to display the raw Json data.
-    app.get("/api/friends", function (request, response) {
+    app.get("/api/friends", function(request, response) {
         response.json(friends);
     });
-    app.post("/api/friends", function (request, response) {
+    app.post("/api/friends", function(request, response) {
         var newFriend = request.body;
-        console.log(friends[0].score[0]);
+        //       console.log(friends[0].score[0]);
 
         console.log(newFriend);
 
