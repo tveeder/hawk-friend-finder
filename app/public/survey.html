@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Blackhawk survey</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- Link static CSS -->
-	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
+    <title>Blackhawk survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Link static CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
+
 <body>
-	<div class="container content">
-		<h1>Survey</h1>
-		<p>Take a quick survey to find your perfect Blackhawk player.</p>
-        
-        
+    <div class="container content">
+        <h1>Survey</h1>
+        <p>Take a quick survey to find your perfect Blackhawk player.</p>
+
+
         <form>
-			<div class="form-group">
-				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
-			</div>
-			<div class="form-group">
-				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
-			</div>
-			<div class="form-group">
-				<label for="question1">Speed is the most important player skill.</label>
-				<select class="form-control" id="question1">
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+            </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+            </div>
+            <div class="form-group">
+                <label for="question1">Speed is the most important player skill.</label>
+                <select class="form-control" id="question1">
 					<option value="empty"></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -31,10 +33,10 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
-			</div>
-			<div class="form-group">
-				<label for="question2">Assists are most important to be a team player.</label>
-				<select class="form-control" id="question2">
+            </div>
+            <div class="form-group">
+                <label for="question2">Assists are most important to be a team player.</label>
+                <select class="form-control" id="question2">
 					<option value="empty"></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -42,10 +44,10 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
-			</div>
-			<div class="form-group">
-				<label for="question3">Power play points matter.</label>
-				<select class="form-control" id="question3">
+            </div>
+            <div class="form-group">
+                <label for="question3">Power play points matter.</label>
+                <select class="form-control" id="question3">
 					<option value="empty"></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -53,10 +55,10 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
-			</div>
-			<div class="form-group">
-				<label for="question4">Youth is an important quality for player performance.</label>
-				<select class="form-control" id="question4">
+            </div>
+            <div class="form-group">
+                <label for="question4">Youth is an important quality for player performance.</label>
+                <select class="form-control" id="question4">
 					<option value="empty"></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -64,10 +66,10 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
-			</div>
-			<div class="form-group">
-				<label for="question5">Puck control is vital for player goal scoring.</label>
-				<select class="form-control" id="question5">
+            </div>
+            <div class="form-group">
+                <label for="question5">Puck control is vital for player goal scoring.</label>
+                <select class="form-control" id="question5">
 					<option value="empty"></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -75,95 +77,93 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
-			</div>
-		
-		</form>
-		<div class="text-center">
-			<button id="submitBtn" type="submit" class="btn btn-success btn-info">Submit</button>
-		</div>
-		
-		<!-- Modal after survey completion -->
-		<div id="bestFriendModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your New Best Friend</h1>
-					</div>
-					<div class="modal-body">
-						<h2 id="bestFriend"></h2>
-						<img id="bestFriendPhoto" src="#">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
 
-	<!-- <img src="https://nhl.bamcontent.com/images/photos/292757992/1080x1920/cut.jpg"> -->
+        </form>
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-info">Submit</button>
+        </div>
+
+        <!-- Modal after survey completion -->
+        <div id="bestFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Your New Best Friend</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="bestFriend"></h2>
+                        <img id="bestFriendPhoto" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <img src="https://nhl.bamcontent.com/images/photos/292757992/1080x1920/cut.jpg"> -->
 
 
-	<script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>
 
 <script type="text/javascript">
-	$("#submitBtn").on("click", function(event) {
-		event.preventDefault();
+    $("#submitBtn").on("click", function(event) {
+        event.preventDefault();
 
-		// Form validation
-		var valid = true;
+        // Form validation
+        var valid = true;
 
-		if($("#name").val() === "" || $("#photo").val() === "") {
-			valid = false;
-		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
-			valid = false;
-		}
+        if ($("#name").val() === "" || $("#photo").val() === "") {
+            valid = false;
+        } else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+            valid = false;
+        }
 
-		if(valid === true) {
-			var newUser = {
-				name: $("#name").val().trim(),
-			
-				photo: $("#photo").val().trim(),
+        if (valid === true) {
+            var newUser = {
+                name: $("#name").val().trim(),
 
-				scores: [
-					$("#question1").val(),
-					$("#question2").val(),
-					$("#question3").val(),
-					$("#question4").val(),
-					$("#question5").val(),
-				]
-		
-			};
+                photo: $("#photo").val().trim(),
 
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                ]
 
-			console.log(newUser.name)
-
-			var currentURL = window.location.origin;
-
-			console.log(currentURL)
-
-			// Ajax call for receiving response after POST req
-			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#bestFriend").text(data.name);
-				console.log(data.name)
-				
-				$("#bestFriendPhoto").attr("src", data.photo);
-				
-				$("#bestFriendModal").modal("toggle");
-			});
+            };
 
 
-		} else {
-			// If a required field is missing, show alert
-			alert("Survey is incomplete!");
+            console.log(newUser.name)
 
-		}
-	});
+            var currentURL = window.location.origin;
+
+            console.log(currentURL)
+
+            // Ajax call for receiving response after POST req
+            $.post(currentURL + "/api/friends", newUser, function(data) {
+                $("#bestFriend").text(data.name);
+                console.log(data.name)
+                console.log(newUser)
+                $("#bestFriendPhoto").attr("src", data.photo);
+
+                $("#bestFriendModal").modal("toggle");
+            });
+
+
+        } else {
+            // If a required field is missing, show alert
+            alert("Survey is incomplete!");
+
+        }
+    });
 </script>
